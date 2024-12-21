@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+body {
+    background-color: #0d253f; 
+
+}
+
+/* navbar dan hero */
+.navbar-custom {
+background-color: #0d253f; 
+}
+.navbar-custom .navbar-brand, .navbar-custom .nav-link {
+color: #ffffff; 
+}
+.navbar-custom .nav-link:hover {
+color: #90cea1;
+}
+.hero-section {
+background-image: url('./assets/image/mata.png');
+background-size: cover; /* Membuat gambar memenuhi elemen tanpa distorsi */
+background-position: center; /* Menempatkan gambar di tengah */
+background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+color: white;
+text-align: center;
+padding: 50px 20px;
+}
+.hero-section h1 {
+font-size: 2.5rem;
+font-weight: bold;
+}
+.hero-section p {
+font-size: 1.2rem;
+}
+.search-bar {
+max-width: 600px;
+margin: 20px auto;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-toggler-icon {
+    color: white;
+}
+/* end navbar hero */
+
+/* main  */
+
+#filmElement {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); /* Membuat grid responsif */
+    gap: 1rem; /* Jarak antara item grid */
+    padding: 1rem;
+    background-color: #fffaf5;
+}
+
+.cardfilm {
+    background-color: #ffffff; /* Warna latar belakang kartu */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    overflow: hidden; /* Menyembunyikan bagian yang melampaui batas */
+    transition: transform 0.3s ease; /* Efek transisi saat hover */
+}
+
+.cardfilm:hover {
+    transform: scale(1.05); /* Memperbesar saat hover */
+}
+
+.cardfilm img {
+    width: 100%; /* Memastikan gambar memenuhi lebar kartu */
+    height: 240px; /* Menyesuaikan tinggi gambar dengan proporsi */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    border-radius: 10px 10px 0 0; /* Melengkung hanya di bagian atas */
+}
+
+.cardfilm .movieTitle {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cardfilm .movieDate {
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+
+/* next prev */
+#next, #prev {
+    /* background-color: #fffaf5; */
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #0d253f;
+    font-size: 17px;
+    font-weight: 500;
+}
+#current {
+    font-size: 17px;
+    font-weight: 500;
+    color: #0d253f
+}
+.Cardnextprev {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.card2 {
+    gap: 20px;
+    align-items: center;
+    display: flex;
+    background-color: #fffaf5;
+    border-radius: 2rem;
+    padding: 5px 20px;
+    cursor: pointer;
+}
